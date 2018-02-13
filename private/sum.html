@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>交易金额明细</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/sum.js"></script>
+    <link rel="stylesheet" href="css/sum.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+</head>
+<body>
+   <div class="contianer">
+       <!--导航-->
+       <div class="nav">
+           <p class="nav_title">最近30笔交易中的金额明细</p>
+           <p class="nav_money">合计:<span class="font_style">￥</span><span class="font_color">1000</span></p>
+           <div class="btn">筛选 <i class="iconfont icon-shangyi-copy"></i></div>
+       </div>
+       <!--蒙层-->
+       <div class="model_black"></div>
+       <!--弹框-->
+       <div class="model_box">
+           <div class="checkbox_area">
+               <ul class="shops_check">
+                   <li>
+                       <label class="labels">
+                           <span>百脑汇</span>
+                           <span>
+                               <input class="inp_checkbox" type="checkbox" value="1">
+                               <span class="checkbox_style checkbox_after"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>乐之</span>
+                           <span>
+                               <input class="inp_checkbox" type="checkbox" value="2">
+                               <span class="checkbox_style checkbox_after"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>BETWEENS</span>
+                           <span>
+                               <input class="inp_checkbox" type="checkbox" value="3">
+                               <span class="checkbox_style checkbox_after"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>乐之精品咖啡</span>
+                           <span>
+                               <input class="inp_checkbox" type="checkbox" value="4">
+                               <span class="checkbox_style checkbox_after"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>电脑医院</span>
+                           <span>
+                               <input class="inp_checkbox" type="checkbox" value="5">
+                               <span class="checkbox_style checkbox_after"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>电竞馆</span>
+                           <span>
+                               <input class="inp_checkbox" type="checkbox" value="6">
+                               <span class="checkbox_style checkbox_after"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>餐饮</span>
+                           <span>
+                               <input class="inp_checkbox" type="checkbox" value="7">
+                               <span class="checkbox_style checkbox_after"><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+               </ul>
+               <ul class="shops_date">
+                   <li>
+                       <label class="labels">
+                           <span>昨天</span>
+                           <span>
+                               <input class="inp_checkbox" type="radio" name="inp_radio" value="00">
+                               <span class="checkbox_style "><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>本月</span>
+                           <span>
+                               <input class="inp_checkbox" type="radio" name="inp_radio" value="01">
+                               <span class="checkbox_style "><i class="iconfont icon-duihao"></i></span>
+                           </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>最近三个月</span>
+                           <span>
+                                   <input class="inp_checkbox" type="radio" name="inp_radio" value="02">
+                                   <span class="checkbox_style"><i class="iconfont icon-duihao"></i></span>
+                               </span>
+                       </label>
+                   </li>
+                   <li>
+                       <label class="labels">
+                           <span>最近半年</span>
+                           <span>
+                                   <input class="inp_checkbox" type="radio" name="inp_radio" value="03">
+                                   <span class="checkbox_style "><i class="iconfont icon-duihao"></i></span>
+                               </span>
+                       </label>
+                   </li>
+               </ul>
+           </div>
+           <div class="btns">
+               <input class="reset" type="button" value="重置">
+               <input class="complete" type="button" value="完成">
+           </div>
+       </div>
+       <!--列表-->
+       <ul class="list_box">
+           <li>
+               <div class="img_box">
+                   <img src="imgs/buynow.png">
+                   <p>百脑汇</p>
+               </div>
+               <div class="content">
+                   <p class="shops">百脑汇上海店</p>
+                   <p class="money add"><span>+</span>92<span>元</span></p>
+                   <p class="date"><span>2018-01-10</span>&nbsp<span>12:09:56</span></p>
+               </div>
+           </li>
+           <li>
+               <div class="img_box">
+                   <img src="imgs/lezhi.png">
+                   <p>乐之</p>
+               </div>
+               <div class="content">
+                   <p class="shops">百脑汇上海店</p>
+                   <p class="money sub"><span>-</span>92<span>元</span></p>
+                   <p class="date"><span>2018-01-10</span>&nbsp<span>12:09:56</span></p>
+               </div>
+           </li>
+           <li>
+               <div class="img_box">
+                   <img src="imgs/betweens.png">
+                   <p>BETWEENS</p>
+               </div>
+               <div class="content">
+                   <p class="shops">百脑汇上海店</p>
+                   <p class="money add"><span>+</span>92<span>元</span></p>
+                   <p class="date"><span>2018-01-10</span>&nbsp<span>12:09:56</span></p>
+               </div>
+           </li>
+           <li>
+               <div class="img_box">
+                   <img src="imgs/lezhicoffee.png">
+                   <p>乐之精品咖啡</p>
+               </div>
+               <div class="content">
+                   <p class="shops">百脑汇上海店</p>
+                   <p class="money sub"><span>-</span>92<span>元</span></p>
+                   <p class="date"><span>2018-01-10</span>&nbsp<span>12:09:56</span></p>
+               </div>
+           </li>
+           <li>
+               <div class="img_box">
+                   <img src="imgs/games.png">
+                   <p>电竞馆</p>
+               </div>
+               <div class="content">
+                   <p class="shops">百脑汇上海店</p>
+                   <p class="money sub"><span>-</span>92<span>元</span></p>
+                   <p class="date"><span>2018-01-10</span>&nbsp<span>12:09:56</span></p>
+               </div>
+           </li>
+           <li>
+               <div class="img_box">
+                   <img src="imgs/hospital.png">
+                   <p>电脑医院</p>
+               </div>
+               <div class="content">
+                   <p class="shops">百脑汇上海店</p>
+                   <p class="money sub"><span>-</span>92<span>元</span></p>
+                   <p class="date"><span>2018-01-10</span>&nbsp<span>12:09:56</span></p>
+               </div>
+           </li>
+       </ul>
+   </div>
+</body>
+</html>

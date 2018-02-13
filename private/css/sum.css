@@ -1,0 +1,224 @@
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+ul, ol { list-style:none; }
+body{
+    background-color: #f2f3f0;
+}
+.contianer{
+    width: 7.5rem;
+    height: auto;
+}
+.nav{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    color: #666;
+    font-size: 0.30rem;
+}
+.nav_title{
+    width: 50%;
+    font-size: 0.28rem;
+}
+.nav_money{
+    width: 37%;
+    font-size: 0.30rem;
+    text-align: center;
+}
+.btn{
+    position: relative;
+}
+.btn>i{
+    font-size: 0.2rem;
+    position: absolute;
+    top: 0%;
+    right: -40%;
+}
+.font_style{
+    font-size: 0.28rem;
+    color: #ffa800;
+}
+.font_color{
+    color: #ffa800;
+}
+.list_box{
+    width: 7.5rem;
+    height: auto;
+}
+.list_box>li{
+    margin: 0.13rem 0;
+    display: flex;
+    justify-content: space-between;
+    height: 2.3rem;
+}
+.list_box>li:first-child{
+    margin-top: 0;
+}
+.img_box{
+    width: 2.3rem;
+    height: 2.3rem;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 0.5rem;
+    box-sizing: border-box;
+}
+.img_box>img{
+    max-height: 1.1rem;
+    max-width: 1.1rem;
+}
+.img_box>p{
+    padding: 0.1rem 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 0.28rem;
+}
+.content{
+    width: 5.17rem;
+    background-color: #fff;
+    padding: 0.4rem 0 0 0.4rem;
+    box-sizing: border-box;
+}
+.shops{
+    font-size: 0.30rem;
+    color: #666666;
+}
+.money{
+    font-size: 0.44rem;
+    line-height: 0.75rem;
+}
+.date{
+    font-size: 0.28rem;
+    color: #999999;
+}
+.add{
+    color: #d71b09;
+}
+.sub{
+    color: #2bd709;
+}
+/*蒙层*/
+.model_black{
+    width: 7.5rem;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+/*弹窗*/
+.model_box{
+    width: 7.5rem;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+.checkbox_area{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 0.18rem 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.checkbox_area>ul{
+    width: 50%;
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+    font-size: 0.32rem;
+}
+.shops_check{
+    border-right: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+.checkbox_area>ul>li{
+    height: 0.86rem;
+    line-height: 0.86rem;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+/*默认checkbox修改*/
+.labels{
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+}
+.inp_checkbox{
+    display: none;
+}
+.checkbox_style{
+    background-color:#fff;
+    border:1px solid #999999;
+    border-radius:4px;
+    display:inline-block;
+    height: 0.33rem;
+    vertical-align:middle;
+    width: 0.33rem;
+    line-height: 1;
+    box-sizing: border-box;
+    position: relative;
+}
+.inp_checkbox:checked + .checkbox_style:after{
+    background-color: #219cf9;
+    border:1px solid #219cf9;
+    border-radius: 4px;
+    content:"";
+    display: inline-block;
+    height:0.33rem;
+    width:0.33rem;
+    box-sizing: border-box;
+    position: relative;
+}
+span>.icon-duihao{
+    position: absolute;
+    top: 0.06rem;
+    left: 0.05rem;
+    color: #ffffff;
+    z-index: 4;
+    font-size: 0.25rem;
+}
+.inp_checkbox:checked + .checkbox_style{
+    border: none;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #cccccc;
+}
+.btns>input{
+    width: 50%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    border: none;
+    font-size: 0.34rem;
+    outline: none;
+}
+.reset{
+    color: #999999;
+    background-color: #fff;
+}
+.complete{
+    color: #fff;
+    background-color: #219cf9;
+}
+
+
+
+
+
+
+
+
+
+
